@@ -1,0 +1,28 @@
+{
+  "name": "my-study-notes",
+  "version": "1.0.0",
+  "description": "一个前端开发者自学道路上的笔记大全",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "start": "pm2 start ecosystem.config.js --env production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konglingwen94/my-study-notes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/konglingwen94/my-study-notes/issues"
+  },
+  "homepage": "https://github.com/konglingwen94/my-study-notes#readme",
+  "devDependencies": {
+    "vuepress": "^1.5.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
