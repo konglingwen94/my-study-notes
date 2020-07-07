@@ -17,6 +17,7 @@ jobs:
           command_timeout: 5m
           script: |
             cd /var/www/my-study-notes
+            git reset --hard a0c8722bef9c6c4499e6a206415d0ab35532f07c
             git pull origin master -f
             npm run build
             

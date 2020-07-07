@@ -8,6 +8,6 @@ module.exports = {
       { text: "Vue", link: "/vue/" },
       { text: "github", link: "https://github.com/konglingwen94" },
     ],
-    sidebar: ["/","/vue/","responsive"], 
+    sidebar: ["/","/vue/","/tools/git"], 
   },
 };
