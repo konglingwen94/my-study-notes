@@ -1,13 +1,28 @@
+// const path = require('path')
+// const fs = require('fs')
+
 module.exports = {
-  title: "Hello VuePress",
+  title: "学习笔记",
   description: "Just playing around",
-  dest:'./dist',
+  dest: "./dist",
   themeConfig: {
     nav: [
-      { text: "Home", link: "/" },
+      {
+        text: "工具",
+        items: [
+          { text: "Linux", link: "/tools/linux" },
+          { text: "NPM", link: "/tools/npm" },
+          {
+            text: "Git",
+            link: "/tools/git",
+          },
+        ],
+      },
       { text: "Vue", link: "/vue/" },
-      { text: "github", link: "https://github.com/konglingwen94" },
+      { text: "Github", link: "https://github.com/konglingwen94/my-study-notes" },
     ],
-    sidebar: ["/","/tools/linux","/tools/NPM","/tools/git"], 
+    sidebar: {
+      "/tools/": ["linux", "npm", "git"],
+    },
   },
 };
