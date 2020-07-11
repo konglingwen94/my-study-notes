@@ -18,11 +18,24 @@ module.exports = {
           },
         ],
       },
-      { text: "Vue", link: "/vue/" },
-      { text: "Github", link: "https://github.com/konglingwen94/my-study-notes" },
+      {
+        text: "软技能",
+        link: "/term/",
+        items: [
+          {
+            text: "术语总结",
+            link: "/skills/term",
+          },
+        ],
+      },
+      {
+        text: "Github",
+        link: "https://github.com/konglingwen94/my-study-notes",
+      },
     ],
     sidebar: {
-      "/tools/": ["linux", "npm", "git"],
+      "/tools/": ["linux", "NPM", "git"], 
+      "/skills/": ["term"],
     },
   },
 };
