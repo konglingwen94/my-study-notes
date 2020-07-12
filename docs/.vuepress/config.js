@@ -1,6 +1,3 @@
-// const path = require('path')
-// const fs = require('fs')
-
 module.exports = {
   title: "学习笔记",
   description: "Just playing around",
@@ -8,7 +5,45 @@ module.exports = {
   themeConfig: {
     nav: [
       {
-        text: "工具",
+        text: "前端",
+        items: [
+          {
+            text: "Vue",
+            link: "/vue/",
+          },
+          {
+            text: "Javascript",
+            link: "/javascript/",
+          },
+          {
+            text: "CSS",
+            link: "/css/",
+          },
+        ],
+      },
+      {
+        text: "后端",
+        items: [
+          {
+            text: "Node",
+            link: "/node/",
+          },
+          {
+            text: "Express",
+            link: "/express/",
+          },
+          {
+            text: "Koa",
+            link: "/koa/",
+          },
+          {
+            text: "mongodb",
+            link: "/mongodb/",
+          },
+        ],
+      },
+      {
+        text: "命令行工具",
         items: [
           { text: "Linux", link: "/tools/linux" },
           { text: "NPM", link: "/tools/npm" },
@@ -23,7 +58,7 @@ module.exports = {
         link: "/term/",
         items: [
           {
-            text: "术语总结",
+            text: "词汇总结",
             link: "/skills/term",
           },
         ],
@@ -34,8 +69,25 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/tools/": ["linux", "NPM", "git"], 
+      "/tools/": ["linux", "NPM", "git"],
       "/skills/": ["term"],
+      "/vue/": [""],
+      "/javascript/": [""],
+      "/css/": [""],
+      "/express/": [""],
+      "/koa/": [""],
+      "/node/": [
+        {
+          title: "node",
+
+          children: [],
+        },
+        {
+          title: "常用node工具",
+
+          children: ["/node/modules/pm2"],
+        },
+      ],
     },
   },
 };
