@@ -2,6 +2,9 @@ module.exports = {
   title: "学习笔记",
   description: "Just playing around",
   dest: "./dist",
+  markdown: {
+    lineNumbers: true
+  },
   themeConfig: {
     nav: [
       {
