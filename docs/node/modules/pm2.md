@@ -1,9 +1,27 @@
 # PM2
 
-## 使用
+## 常用命令
 
 ```bash
+1. pm2 start <file.js> 启动进程
 
+2. pm2 stop [<name> | <pid>] 停止进程
+
+3. pm2 restart & reload [<name> | <pid>] 重启进程
+
+4. pm2 delete [<name> | <pid>] 删除进程
+
+4. pm2 ls 列出所有进程
+
+┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name               │ mode     │ ↺    │ status    │ cpu      │ memory   │
+├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+│ 10 │ my-study-notes     │ fork     │ 0    │ online    │ 0%       │ 52.5mb   │
+│ 9  │ nuxt-juejin-proje… │ fork     │ 0    │ online    │ 0.2%     │ 92.6mb   │
+│ 2  │ vue-bytedanceJob   │ fork     │ 2    │ online    │ 0.2%     │ 57.4mb   │
+│ 1  │ vue-music          │ fork     │ 2    │ online    │ 0%       │ 62.5mb   │
+│ 0  │ vue-sell           │ fork     │ 2    │ online    │ 0.2%     │ 52.9mb   │
+└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘
 
 ```
 
