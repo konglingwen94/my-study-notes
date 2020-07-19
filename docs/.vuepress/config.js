@@ -3,7 +3,7 @@ module.exports = {
   description: "Just playing around",
   dest: "./dist",
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
   },
   themeConfig: {
     nav: [
@@ -45,6 +45,7 @@ module.exports = {
           },
         ],
       },
+
       {
         text: "命令行工具",
         items: [
@@ -63,6 +64,23 @@ module.exports = {
           {
             text: "词汇总结",
             link: "/skills/term",
+          },
+        ],
+      },
+      {
+        text: "项目",
+        items: [
+          {
+            text: "所有项目",
+            link: "/projects/",
+          },
+          {
+            text: "场景用例解析",
+            link: "/projects/useCases/",
+          },
+          {
+            text: "文章总结",
+            link: "/projects/article",
           },
         ],
       },

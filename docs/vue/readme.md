@@ -41,3 +41,7 @@
 [message-tree](https://github.com/konglingwen94/message-tree)
 
 [good-swiper](https://github.com/konglingwen94/good-swiper)
+
+## 工作流程图
+
+<https://github.com/konglingwen94/vue-graphics>
