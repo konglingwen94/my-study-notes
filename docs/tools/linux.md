@@ -1,12 +1,14 @@
 # Linux
 
+[命令查询](https://wangchujiang.com/linux-command/hot.html)
+
 ## 常用命令
 
 1. 查看目录
 
 ```bash
 
-ls 查看当前目录
+ls 查看当前目录  
 
 ls <dir> 列出指定目录内容
 
@@ -15,6 +17,8 @@ ls <dir> 列出指定目录内容
 -a  查看隐藏的所有文件
 
 ```
+
+> [查看更多参数](https://wangchujiang.com/linux-command/c/ls.html)
 
 2. 目录操作
 

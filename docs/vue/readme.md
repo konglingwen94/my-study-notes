@@ -1,4 +1,4 @@
-# Vue
+# 相关外链
 
 ## 官方插件
 
@@ -42,6 +42,6 @@
 
 [good-swiper](https://github.com/konglingwen94/good-swiper)
 
-## 工作流程图
+## 图解工作原理
 
 <https://github.com/konglingwen94/vue-graphics>

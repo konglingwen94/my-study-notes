@@ -92,7 +92,18 @@ module.exports = {
     sidebar: {
       "/tools/": ["linux", "NPM", "git"],
       "/skills/": ["term"],
-      "/vue/": [""],
+      "/vue/": [
+        {
+          title:'工作原理',
+          // path:'/vue/guide',
+          children:[]
+        },
+        {
+          title: "其他",
+          children: [""],
+        },
+        
+      ],
       "/javascript/": [""],
       "/css/": [""],
       "/express/": [""],
