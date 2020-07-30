@@ -10,5 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: cd ../
+    - uses: actions/checkout@v1
+    - run: npm ci
+    - run: npm install vuepress
+    - run: npm run build
+
+    steps:
       - run: npm run deploy
