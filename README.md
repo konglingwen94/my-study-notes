@@ -4,7 +4,7 @@
 
 ## 线上查看
 
-[http://123.56.124.33:7000](http://123.56.124.33:7000)
+<https://konglingwen94.github.io/my-study-notes/>
 
 ## 说明
 
