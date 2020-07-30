@@ -13,7 +13,7 @@
 1. 添加工作区文件到暂存区
 
 ```bash
- 
+
 git add 文件名|目录（可以添加多个，中间用空格间隔）  跟踪文件
 ```
 
@@ -143,5 +143,15 @@ git checkout <branch> 切换到新分支
 例如：`git checkout -b newbranch`
 
 
+```
+
+3. 删除分支（需要先前换到其他分支才能做删除操作）
+
+
+```bash
+
+git branch -d <local-branch> 删除指定名称的本地分支
+
+git push origin -d <remote-branch> 删除指定名称的远程分支
 
 ```
