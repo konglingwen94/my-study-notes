@@ -1,16 +1,17 @@
-name: blog deploy
-
+name: GitHub Pages deploy
 on:
   push:
     branches:
       - master
-
 jobs:
-  build-deploy:
+  checkout-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v1
-    - run: npm ci
-    - run: npm install vuepress  
-    - run: npm run deploy
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Deploy to GitHub Pages
+      uses: Cecilapp/GitHub-Pages-deploy@master
+      env:
+        EMAIL: 794430774@qq.com
+        GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BUILD_DIR: dist
