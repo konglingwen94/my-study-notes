@@ -1,18 +1,13 @@
 name: blog deploy
 
-on: 
+on:
   push:
-    branches: 
+    branches:
       - master
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - uses: actions/checkout@v1
-    
-    - run: npm run deploy
-    
-    
-   
+      - run: npm run deploy
