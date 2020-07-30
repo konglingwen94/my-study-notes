@@ -1,18 +1,22 @@
-name: remote ssh command
+name: blog deploy
+
 on:
   push:
     branches:
       - master
+
 jobs:
-  build:
-    name: Build
+  build-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: executing remote ssh commands using password
-        uses: appleboy/ssh-action@master
-        with:
-          command_timeout: 5m
-          script: |
+      - uses: actions/checkout@v1
+      - run: npm ci
+      - run: npm install vuepress
+      - run: npm run build
 
-
-            npm run deploy
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v2.5.0
+        env:
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: dist
