@@ -5,9 +5,10 @@ on:
       - master
 
 jobs:
+    build-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      
+
     - name: Deploy
     uses: peaceiris/actions-gh-pages@v3
