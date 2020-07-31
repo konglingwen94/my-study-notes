@@ -10,11 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v1
-    - run: npm ci
-    - run: npm install vuepress
-    - run: npm run build
-    - run: cp CNAME docs/.vuepress/dist/
+     
     
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2.5.0
