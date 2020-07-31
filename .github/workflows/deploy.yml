@@ -14,4 +14,4 @@ jobs:
       env:
         EMAIL: 794430774@qq.com
         GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BUILD_DIR: /dist
+        BUILD_DIR: ./dist
