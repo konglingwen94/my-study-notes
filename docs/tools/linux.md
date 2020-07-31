@@ -54,4 +54,5 @@ echo "content" >> <file> 追加文件内容
 
 cat <file>  读取文件内容
 
+cat <file> | pbcopy 读取文件内容并拷贝到剪贴板
 ```
