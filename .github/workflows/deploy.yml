@@ -1,20 +1,22 @@
 name: blog deploy
 
-on: 
+on:
   push:
-    branches: 
+    branches:
       - master
 
 jobs:
-  build-deploy:
+  checkout-deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
-     
-    
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v2.5.0
-      env:
-        ACTIONS_DEPLOY_KEY: ${{secrets.key}}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: dist
+      - name: checkout
+      - uses: actions/checkout@v1
+      
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v2.5.0
+        env:
+          # ACTIONS_DEPLOY_KEY: ${{secrets.key}}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR:  dist
