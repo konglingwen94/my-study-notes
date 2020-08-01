@@ -152,6 +152,6 @@ git checkout <branch> 切换到新分支
 
 git branch -d <local-branch> 删除指定名称的本地分支
 
-git push origin -d <remote-branch> 删除指定名称的远程分支
+git push origin -d [remote-branch] 删除指定名称的远程分支
 
 ```
