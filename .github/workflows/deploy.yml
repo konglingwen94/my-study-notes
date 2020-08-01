@@ -20,4 +20,4 @@ jobs:
       env:
         ACTIONS_DEPLOY_KEY: ${{secrets.key}}
         PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR:  dist  
+        PUBLISH_DIR:  dist   
