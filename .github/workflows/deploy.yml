@@ -20,6 +20,7 @@ jobs:
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_dir: dist
-          user_name: 'konglingwen94'
-          user_email: '794430774@qq.com'
+          allow_empty_commit: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
  
