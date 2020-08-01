@@ -6,9 +6,7 @@
   "homepage": "https://konglingwen94.github.io/my-study-notes/",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
