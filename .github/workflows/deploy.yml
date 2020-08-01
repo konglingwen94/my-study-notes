@@ -18,9 +18,7 @@ jobs:
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2.5.0
       env:
-        ACTIONS_DEPLOY_KEY: ${{secrets.key}}
+        PERSONAL_TOKEN: ${{secrets.PERSONAL_TOKEN}}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR:  dist
-      with:
-        username: "konglingwen94"
-        useremail: "794430774@qq.com"   
+     
