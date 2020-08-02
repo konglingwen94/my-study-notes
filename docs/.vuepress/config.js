@@ -56,6 +56,10 @@ module.exports = {
             text: "Git",
             link: "/tools/git",
           },
+          {
+            text: "DevOps",
+            link: "/tools/devOps",
+          },
         ],
       },
       {
@@ -91,7 +95,7 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/tools/": ["linux", "NPM", "git"],
+      "/tools/": ["linux", "NPM", "git","devOps"],
       "/skills/": ["term"],
       "/vue/": [
         {
