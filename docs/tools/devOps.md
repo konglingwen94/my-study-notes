@@ -70,6 +70,8 @@ EXP. scp <dir> 192.168.1.1:/var/www
 文件中的`secrets.PERSONAL_TOKEN`是个人`github`账号的生产的`personal access token`，需要为这个加密字段配置
 `repo`访问的权限才能生效。
 
+> 参考: [持续集成利器，GitHub Actions](https://juejin.im/post/6845166891665719309)
+
 ### Git hooks
 
 1. 下载[yorkie](https://github.com/yyx990803/yorkie)模块
