@@ -147,11 +147,25 @@ git checkout <branch> 切换到新分支
 
 3. 删除分支（需要先前换到其他分支才能做删除操作）
 
-
 ```bash
 
 git branch -d <local-branch> 删除指定名称的本地分支
 
 git push origin -d [remote-branch] 删除指定名称的远程分支
+
+```
+
+4. 更新远程服务器分支状态到本地 （删除本地远程不存在的分支）
+
+```bash
+git remote update origin --prune
+
+```
+
+5. 合并指定分支到当前分支
+
+```bash
+
+git merge [branch]
 
 ```
