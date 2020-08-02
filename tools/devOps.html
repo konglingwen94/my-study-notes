@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>持续集成 | 学习笔记</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="Just playing around">
+    <link rel="preload" href="/my-study-notes/assets/css/0.styles.3511a255.css" as="style"><link rel="preload" href="/my-study-notes/assets/js/app.1d8acaa3.js" as="script"><link rel="preload" href="/my-study-notes/assets/js/2.1158e463.js" as="script"><link rel="preload" href="/my-study-notes/assets/js/17.68c412dd.js" as="script"><link rel="prefetch" href="/my-study-notes/assets/js/10.588321f4.js"><link rel="prefetch" href="/my-study-notes/assets/js/11.e81e9aa8.js"><link rel="prefetch" href="/my-study-notes/assets/js/12.84ec05ab.js"><link rel="prefetch" href="/my-study-notes/assets/js/13.0e141b65.js"><link rel="prefetch" href="/my-study-notes/assets/js/14.e03a5725.js"><link rel="prefetch" href="/my-study-notes/assets/js/15.6170755f.js"><link rel="prefetch" href="/my-study-notes/assets/js/16.5ebd33d4.js"><link rel="prefetch" href="/my-study-notes/assets/js/18.45b0d8db.js"><link rel="prefetch" href="/my-study-notes/assets/js/19.ed54db2e.js"><link rel="prefetch" href="/my-study-notes/assets/js/20.b5806a3a.js"><link rel="prefetch" href="/my-study-notes/assets/js/21.4e2e7600.js"><link rel="prefetch" href="/my-study-notes/assets/js/22.5e682ae6.js"><link rel="prefetch" href="/my-study-notes/assets/js/3.aa48cf35.js"><link rel="prefetch" href="/my-study-notes/assets/js/4.1b270202.js"><link rel="prefetch" href="/my-study-notes/assets/js/5.53a6dec9.js"><link rel="prefetch" href="/my-study-notes/assets/js/6.4f0d891d.js"><link rel="prefetch" href="/my-study-notes/assets/js/7.42c6fca1.js"><link rel="prefetch" href="/my-study-notes/assets/js/8.2794ebc8.js"><link rel="prefetch" href="/my-study-notes/assets/js/9.d2ba359b.js">
+    <link rel="stylesheet" href="/my-study-notes/assets/css/0.styles.3511a255.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/my-study-notes/" class="home-link router-link-active"><!----> <span class="site-name">学习笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/my-study-notes/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/my-study-notes/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/my-study-notes/css/" class="nav-link">
+  CSS
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/my-study-notes/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/my-study-notes/express/" class="nav-link">
+  Express
+</a></li><li class="dropdown-item"><!----> <a href="/my-study-notes/koa/" class="nav-link">
+  Koa
+</a></li><li class="dropdown-item"><!----> <a href="/my-study-notes/mongodb/" class="nav-link">
+  mongodb
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="命令行工具" class="dropdown-title"><span class="title">命令行工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/my-study-notes/tools/linux.html" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/my-study-notes/tools/npm.html" class="nav-link">
+  NPM
+</a></li><li class="dropdown-item"><!----> <a href="/my-study-notes/tools/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/my-study-notes/tools/devOps.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  DevOps
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软技能" class="dropdown-title"><span class="title">软技能</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/my-study-notes/skills/term.html" class="nav-link">
+  词汇总结
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目" class="dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/my-study-notes/projects/" class="nav-link">
+  所有项目
+</a></li><li class="dropdown-item"><!----> <a href="/my-study-notes/projects/useCases/" class="nav-link">
+  场景用例解析
+</a></li><li class="dropdown-item"><!----> <a href="/my-study-notes/projects/article.html" class="nav-link">
+  文章总结
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/konglingwen94/my-study-notes" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/my-study-notes/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/my-study-notes/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/my-study-notes/css/" class="nav-link">
+  CSS
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/my-study-notes/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/my-study-notes/express/" class="nav-link">
+  Express
+</a></li><li class="dropdown-item"><!----> <a href="/my-study-notes/koa/" class="nav-link">
+  Koa
+</a></li><li class="dropdown-item"><!----> <a href="/my-study-notes/mongodb/" class="nav-link">
+  mongodb
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="命令行工具" class="dropdown-title"><span class="title">命令行工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/my-study-notes/tools/linux.html" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/my-study-notes/tools/npm.html" class="nav-link">
+  NPM
+</a></li><li class="dropdown-item"><!----> <a href="/my-study-notes/tools/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/my-study-notes/tools/devOps.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  DevOps
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软技能" class="dropdown-title"><span class="title">软技能</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/my-study-notes/skills/term.html" class="nav-link">
+  词汇总结
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目" class="dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/my-study-notes/projects/" class="nav-link">
+  所有项目
+</a></li><li class="dropdown-item"><!----> <a href="/my-study-notes/projects/useCases/" class="nav-link">
+  场景用例解析
+</a></li><li class="dropdown-item"><!----> <a href="/my-study-notes/projects/article.html" class="nav-link">
+  文章总结
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/konglingwen94/my-study-notes" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/my-study-notes/tools/linux.html" class="sidebar-link">Linux</a></li><li><a href="/my-study-notes/tools/NPM.html" class="sidebar-link">NPM</a></li><li><a href="/my-study-notes/tools/git.html" class="sidebar-link">GIT</a></li><li><a href="/my-study-notes/tools/devOps.html" aria-current="page" class="active sidebar-link">持续集成</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/my-study-notes/tools/devOps.html#ssh-协议文件传输" class="sidebar-link">SSH 协议文件传输</a></li><li class="sidebar-sub-header"><a href="/my-study-notes/tools/devOps.html#项目持续集成方案" class="sidebar-link">项目持续集成方案</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="持续集成"><a href="#持续集成" class="header-anchor">#</a> 持续集成</h1> <h2 id="ssh-协议文件传输"><a href="#ssh-协议文件传输" class="header-anchor">#</a> SSH 协议文件传输</h2> <h3 id="ssh-自动认证密码登录远程服务器配置"><a href="#ssh-自动认证密码登录远程服务器配置" class="header-anchor">#</a> ssh 自动认证密码登录远程服务器配置</h3> <p>添加一下配置到电脑目录<code>/.ssh/config</code></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Host myremote            <span class="token comment"># any name for the host</span>
+
+HostName <span class="token number">192.168</span>.178.05  <span class="token comment"># IP, .local, or hostname if defined</span>
+
+User username            <span class="token comment"># your username</span>
+
+Port <span class="token number">22</span>                  <span class="token comment"># port to listen</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>设置完成后删除<code>#</code>开头的注释，不然回报 <code>/Users/username/.ssh/config line 10: garbage at end of line; &quot;#&quot;.</code> 的错误，具体原因不是很清楚，只能先这样设置。</p> <h4 id="使用"><a href="#使用" class="header-anchor">#</a> 使用</h4> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">ssh</span> myremote
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="custom-block tip"><p class="custom-block-title">参考</p> <p><a href="https://www.jianshu.com/p/44060824ec2a" target="_blank" rel="noopener noreferrer">https://www.jianshu.com/p/44060824ec2a<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="https://askubuntu.com/questions/257472/host-alias-for-ssh" target="_blank" rel="noopener noreferrer">https://askubuntu.com/questions/257472/host-alias-for-ssh<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <h3 id="scp-两台服务器无密码传输文件配置"><a href="#scp-两台服务器无密码传输文件配置" class="header-anchor">#</a> SCP 两台服务器无密码传输文件配置</h3> <ol><li>将 主机 A <code>.ssh</code> 目录中的 <code>id_rsa.pub</code> 文件复制到 主机 B 的 <code>~/.ssh/</code> 目录中，并改名为 <code>authorized_keys</code>。</li></ol> <p>scp .ssh/id_rsa.pub 192.168.10.2:/root/.ssh/authorized_keys</p> <p>以后从 A 主机 scp 到 B 主机就不需要密码了</p> <ol start="2"><li>测试主机 A 文件 复制到主机 B</li></ol> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">scp</span> <span class="token operator">&lt;</span>dir<span class="token operator">&gt;|</span><span class="token operator">&lt;</span>file<span class="token operator">&gt;</span> IP:/dirname
+
+EXP. <span class="token function">scp</span> <span class="token operator">&lt;</span>dir<span class="token operator">&gt;</span> <span class="token number">192.168</span>.1.1:/var/www
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>复制成功</p> <h2 id="项目持续集成方案"><a href="#项目持续集成方案" class="header-anchor">#</a> 项目持续集成方案</h2> <h3 id="github-actions"><a href="#github-actions" class="header-anchor">#</a> github actions</h3> <ol><li><p>在项目根目录新建<code>.github/workflows/</code>目录结构，在<code>workflows</code>目录新建一个以<code>yml</code>为扩展名的文件，文件可以自由命名</p></li> <li><p>搜索<code>github</code>官方的<code>actions</code>市场，选择一个适合自己的持续集成方案<code>action</code>,目前以<code>actions-gh-pages</code>为例配置文件如下</p></li></ol> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code> <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> peaceiris/actions<span class="token punctuation">-</span>gh<span class="token punctuation">-</span>pages@v3
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token key atrule">personal_token</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.PERSONAL_TOKEN <span class="token punctuation">}</span><span class="token punctuation">}</span>
+          <span class="token key atrule">publish_dir</span><span class="token punctuation">:</span> dist
+          <span class="token key atrule">allow_empty_commit</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>文件中的<code>secrets.PERSONAL_TOKEN</code>是个人<code>github</code>账号的生产的<code>personal access token</code>，需要为这个加密字段配置
+<code>repo</code>访问的权限才能生效。</p> <h3 id="git-hooks"><a href="#git-hooks" class="header-anchor">#</a> Git hooks</h3> <ol><li>下载<a href="https://github.com/yyx990803/yorkie" target="_blank" rel="noopener noreferrer">yorkie<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>模块</li></ol> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> yorkie --save-dev
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ol start="2"><li>配置<code>package.json</code>文件中的<code>gitHooks</code>字段</li></ol> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;gitHooks&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;pre-push&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run deploy&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>配置完成后，每次项目提交到远程仓库之前都会执行<code>pre-push</code>的命令</p> <div class="custom-block tip"><p class="custom-block-title">参考:</p> <p><a href="https://blog.csdn.net/weixin_33750452/article/details/91399836" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/weixin_33750452/article/details/91399836<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="https://www.cnblogs.com/coldfrost/p/11547362.html" target="_blank" rel="noopener noreferrer">https://www.cnblogs.com/coldfrost/p/11547362.html<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/my-study-notes/tools/git.html" class="prev">
+        GIT
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/my-study-notes/assets/js/app.1d8acaa3.js" defer></script><script src="/my-study-notes/assets/js/2.1158e463.js" defer></script><script src="/my-study-notes/assets/js/17.68c412dd.js" defer></script>
+  </body>
+</html>
