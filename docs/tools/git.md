@@ -45,8 +45,6 @@ git commit  -a 提交所有更改的文件（可与其他参数串联使用）
 
 ```
 
-
-
 5. 同步远程版本库
 
 ```bash
@@ -73,7 +71,7 @@ git fetch 查看远程版本库是否有新的更新
 
 git reset <commitID> 移动`HEAD`的指针到指定的历史`commitID`
 
- -- mixed ,保留原来的工作区不变，回退版本带来的差异混入到**工作区** (默认参数) 
+ -- mixed ,保留原来的工作区不变，回退版本带来的差异混入到**工作区** (默认参数)
 
  --hard 清空暂存区和工作区，看上去有撤销的操作
 
@@ -82,7 +80,8 @@ git reset <commitID> 移动`HEAD`的指针到指定的历史`commitID`
 
 ```
 
-> 详细解析在  [Git Reset 三种模式](https://www.jianshu.com/p/c2ec5f06cf1a)
+> 详细解析在 [Git Reset 三种模式](https://www.jianshu.com/p/c2ec5f06cf1a)
+
 ## 查询
 
 1. 查看当前工作树状态
@@ -185,5 +184,28 @@ git remote update origin --prune
 ```bash
 
 git merge [branch]
+
+```
+
+## Git stash 
+
+添加工作区内容到`git`存储栈（会把工作区删除）
+
+```bash
+git stash <save "save message"> 添加存储，默认存储信息为`stash@{0}`
+
+git stash list 查看存储列表
+
+git stash show <stash@{n}> 查看做了哪些改动，默认查看第一个存储
+
+git stash show <stash@{n}> -p 查看具体改动内容，默认显示第一个存储 ，类似于`git diff`
+
+git stash pop <stash@{n}> 从存储栈弹出第一个存储并应用到工作区
+
+git stash drop <stash@{n}>  从存储栈中删除指定的存储，默认删除第一个。
+
+git  stash apply <stash@{n}> 应用一个存储，不从存储栈删除
+
+git stash clear 清空存储栈
 
 ```
