@@ -187,9 +187,9 @@ git merge [branch]
 
 ```
 
-## Git stash 
+## Git stash
 
-添加工作区内容到`git`存储栈（会把工作区删除）
+添加工作区内容到`git`存储栈（会把工作区内容移除）
 
 ```bash
 git stash <save "save message"> 添加存储，默认存储信息为`stash@{0}`
@@ -209,3 +209,7 @@ git  stash apply <stash@{n}> 应用一个存储，不从存储栈删除
 git stash clear 清空存储栈
 
 ```
+
+:::tip 参考链接
+<https://www.cnblogs.com/zndxall/archive/2018/09/04/9586088.html>
+:::
