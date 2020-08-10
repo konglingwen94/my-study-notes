@@ -111,6 +111,10 @@ module.exports = {
           title: "其他",
           children: [""],
         },
+        {
+          title: "组件库",
+          children: ["library"],
+        },
         
       ],
       "/javascript/": [""],
