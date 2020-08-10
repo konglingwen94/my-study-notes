@@ -87,6 +87,10 @@ module.exports = {
             text: "文章总结",
             link: "/projects/article",
           },
+          {
+            text: "问题记录",
+            link: "/projects/bugs/",
+          },
         ],
       },
       {
