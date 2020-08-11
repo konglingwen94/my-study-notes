@@ -60,6 +60,10 @@ module.exports = {
             text: "DevOps",
             link: "/tools/devOps",
           },
+          {
+            text: "CURL",
+            link: "/tools/curl",
+          },
         ],
       },
       {
@@ -99,7 +103,7 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/tools/": ["linux", "NPM", "git","devOps"],
+      "/tools/": ["linux", "NPM", "git","devOps",'curl'],
       "/skills/": ["term"],
       "/vue/": [
         {
