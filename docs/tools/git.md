@@ -194,6 +194,8 @@ git merge [branch]
 ```bash
 git stash <save "save message"> 添加存储，默认存储信息为`stash@{0}`
 
+git stash -p 以交互式命令进行选择需要存储的文件，需要存储选择`y`,否则选择`n`
+
 git stash list 查看存储列表
 
 git stash show <stash@{n}> 查看做了哪些改动，默认查看第一个存储
@@ -212,4 +214,6 @@ git stash clear 清空存储栈
 
 :::tip 参考链接
 <https://www.cnblogs.com/zndxall/archive/2018/09/04/9586088.html>
+
+<https://www.jianshu.com/p/fe4d54cb6244>
 :::
