@@ -2,7 +2,7 @@ module.exports = {
   title: "学习笔记",
   description: "Just playing around",
   dest: "./dist",
-  base:'/my-study-notes/',
+  base: "/my-study-notes/",
   markdown: {
     lineNumbers: true,
   },
@@ -103,13 +103,13 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/tools/": ["linux", "NPM", "git","devOps",'curl'],
+      "/tools/": ["linux", "NPM", "git", "devOps", "curl"],
       "/skills/": ["term"],
       "/vue/": [
         {
-          title:'工作原理',
+          title: "工作原理",
           // path:'/vue/guide',
-          children:[]
+          children: [],
         },
         {
           title: "其他",
@@ -119,9 +119,8 @@ module.exports = {
           title: "组件库",
           children: ["library"],
         },
-        
       ],
-      "/javascript/": [""],
+      "/javascript/": ["", "regexp"],
       "/css/": [""],
       "/express/": [""],
       "/koa/": [""],

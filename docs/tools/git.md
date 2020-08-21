@@ -217,3 +217,20 @@ git stash clear 清空存储栈
 
 <https://www.jianshu.com/p/fe4d54cb6244>
 :::
+
+## Git Diff & Git show
+
+```bash
+
+git diff <file> 比对所有工作区和暂存区之间的文件内容变动
+
+git diff --cached <file> 比对所有暂存区和版本库之间的文件内容变动
+
+git show 查看最近一次版本库的内容
+
+
+```
+
+:::tip 详细使用
+<http://gitbook.liuhui998.com/3_5.html>
+:::
