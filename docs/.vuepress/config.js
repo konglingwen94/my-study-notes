@@ -120,7 +120,7 @@ module.exports = {
           children: ["library"],
         },
       ],
-      "/javascript/": ["", "regexp"],
+      "/javascript/": ["", "regexp", "array"],
       "/css/": [""],
       "/express/": [""],
       "/koa/": [""],
