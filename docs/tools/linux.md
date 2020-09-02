@@ -56,3 +56,30 @@ cat <file>  读取文件内容
 
 cat <file> | pbcopy 读取文件内容并拷贝到剪贴板
 ```
+## 传输文件到远程服务器
+
+```bash
+
+scp -r <dir> username@remoteIP:/var/www/   传输文件夹到指定目录
+
+scp  <filename>  username@remoteIP:/var/www/   传输文件到指定目录,可连续传递多个
+
+```
+
+## 在命令行执行批量脚本文件
+1. 编写脚本
+
+```bash
+
+#! /usr/bin/
+
+npm run <scripts>
+
+scp <bash>
+```
+
+2. 执行
+```bash
+sh <filename>.sh
+
+```
