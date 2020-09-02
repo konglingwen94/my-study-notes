@@ -6,20 +6,28 @@
   "homepage": "https://konglingwen94.github.io/my-study-notes/",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "start": "pm2 start --name=\"my-study-notes\" ./app.js"
+  },
+  "gitHooks":{
+    "pre-push":"sh deploy.sh"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/konglingwen94/my-study-notes.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "note",
+    "blog",
+    "study-note"
+  ],
+  "author": "konglingwen",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/konglingwen94/my-study-notes/issues"
   },
-  "homepage": "https://github.com/konglingwen94/my-study-notes#readme",
   "devDependencies": {
-    "vuepress": "^1.5.2"
+    "vuepress": "^1.5.2",
+    "yorkie": "^2.0.0"
   }
 }

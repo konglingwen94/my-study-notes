@@ -2,7 +2,7 @@ module.exports = {
   title: "学习笔记",
   description: "Just playing around",
   dest: "./dist",
-  base: "/my-study-notes/",
+  // base: "/my-study-notes/",
   markdown: {
     lineNumbers: true,
   },
