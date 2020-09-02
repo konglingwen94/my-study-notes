@@ -67,7 +67,7 @@ scp  <filename>  username@remoteIP:/var/www/   传输文件到指定目录,可�
 ```
 
 ## 在命令行执行批量脚本文件
-1. 编写脚本
+1. 编写脚本 `deploy.sh`
 
 ```bash
 
@@ -75,11 +75,13 @@ scp  <filename>  username@remoteIP:/var/www/   传输文件到指定目录,可�
 
 npm run <scripts>
 
+...
+
 scp <bash>
 ```
 
-2. 执行
+2. 执行`deploy.sh`
 ```bash
-sh <filename>.sh
+sh deploy.sh
 
 ```

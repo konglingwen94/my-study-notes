@@ -4,6 +4,7 @@ const path = require("path");
 const app = express();
 
 
+// app.use(express.static(path.join(__dirname, "demos")));
 app.use(express.static(path.join(__dirname, "dist")));
 const PORT=7000
 
