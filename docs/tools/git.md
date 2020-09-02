@@ -96,14 +96,16 @@ git status
 git ls-files
 ```
 
-3. 查看版本库历史记录
+3. 查看日志记录
 
 ```bash
 git log
 
---graph 以分支图的方式显示
+--graph 以图形列表显示历史记录版本，显示分支分叉路线
 
 - <number> 显示指定个数的版本日志,默认从最近的记录开始
+
+git reflog 查看git操作历史记录，可恢复`git reset`回退的版本
 ```
 
 4. 版本库日志统计

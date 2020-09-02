@@ -8,7 +8,7 @@
 
 ```bash
 
-ls 查看当前目录  
+ls 查看当前目录
 
 ls <dir> 列出指定目录内容
 
@@ -56,7 +56,10 @@ cat <file>  读取文件内容
 
 cat <file> | pbcopy 读取文件内容并拷贝到剪贴板
 ```
-## 传输文件到远程服务器
+
+## 文件传输
+
+1. 传输文件到远程服务器
 
 ```bash
 
@@ -66,7 +69,18 @@ scp  <filename>  username@remoteIP:/var/www/   传输文件到指定目录,可�
 
 ```
 
+2. 资源复制
+
+```bash
+cp -r <dir> <target> 拷贝目录到指定目录
+
+cp -r <dir>/* <target> 拷贝目录内的文件到指定目录
+
+cp <filename> <target> 拷贝文件到指定位置
+```
+
 ## 在命令行执行批量脚本文件
+
 1. 编写脚本 `deploy.sh`
 
 ```bash
@@ -81,6 +95,7 @@ scp <bash>
 ```
 
 2. 执行`deploy.sh`
+
 ```bash
 sh deploy.sh
 

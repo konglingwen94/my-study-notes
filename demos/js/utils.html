@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/element-resize-event-polyfill@1.0.5/dist/element-resize-event-polyfill.umd.min.js"></script>
+    <style>
+      #box {
+        width: 400px;
+        height: 400px;
+        border: 1px solid;
+        resize: both;
+        overflow: auto;
+      }
+      .demo {
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo">
+      <h2>函数防抖,输入文本查看效果</h2>
+      <input type="text" id="input" />
+      <span id="syncContent"></span>
+    </div>
+
+    <h2>函数节流，设置回调函数执行间隔时间，缩放盒子大小查看控制台输出结果</h2>
+    <input value="300" type="number" />
+    <div id="box" class="demo">
+      盒子缩放次数 <span id="throttleCount"></span>
+    </div>
+  </body>
+  <script>
+    const input = document.getElementById("input");
+    const resizeDom = document.getElementById("box");
+    const syncContent = document.getElementById("syncContent");
+    const inputNumber = document.querySelector("[type=number]");
+    handleNumberInput(300);
+    function handleNumberInput(num) {
+      console.log(num);
+      resizeDom.onresize = (function(interval) {
+        let prevTimer;
+        let count = 0;
+
+        return function() {
+          const now = Date.now();
+          if (!prevTimer) prevTimer = now;
+          if (now - prevTimer > interval) {
+            console.log("resize");
+            throttleCount.innerHTML = count += 1;
+            prevTimer = now;
+          }
+        };
+      })(num);
+    }
+
+    inputNumber.oninput = (e) => {
+      handleNumberInput(e.target.value);
+    };
+    input.oninput = (function() {
+      let timer;
+
+      return function(e) {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          console.log("input event triggered");
+
+          syncContent.innerHTML = e.target.value;
+        }, 300);
+      };
+    })();
+  </script>
+</html>
