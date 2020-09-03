@@ -1,6 +1,6 @@
 # 常用工具函数
 
-1. 给`scroll`,`resize`等高频触发事件节流
+## 给`scroll`,`resize`等高频触发事件节流
 
 ```js
 /*
@@ -33,11 +33,11 @@ window.onscroll = throttle(() => {
 :::tip 代码演示
 <a target="_blank" href="/demos/utils.html" ></a>
 
-<http://123.56.124.33:7000/demos/js/utils.html>
+<http://123.56.124.33:7000/demos/js/utils.html#throttle>
 
 :::
 
-2. 给浏览器 DOM`input`事件防抖
+## 给浏览器 DOM`input`事件防抖
 
 ```js
 function debounce(fn, delay) {
@@ -59,5 +59,5 @@ input.oninput = debounce(() => {
 ```
 
 :::tip 代码演示
-<http://localhost:7000/demos/js/utils.html>
+<http://123.56.124.33:7000/demos/js/utils.html#debounce>
 :::

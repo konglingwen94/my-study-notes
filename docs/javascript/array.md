@@ -18,7 +18,9 @@ for (let i = 0, len = array.length; i < len; i++) {
   array[randomIndex] = temp;
 }
 ```
-
+:::tip 代码演示
+<http://123.56.124.33:7000/demos/js/array.html>
+:::
 2. 将数据在`Vue`中映射到视图的方式
 
 2.1 数组变异方法修改
@@ -60,3 +62,28 @@ for (let i = 0, len = copyArray.length; i < len; i++) {
 
 this.array = copyArray;
 ```
+
+## 数组去重
+
+```js
+const arr = [1, 3, 4, 3, 5, 3];
+
+function uniq(arr) {
+  for (let i = 0, l = arr.length; i < l; i++) {
+    for (let j = i + 1, len = arr.length; j < len; j++) {
+      if (arr[i] === arr[j]) {
+        arr.splice(j, 1);
+        len--;
+      }
+    }
+  }
+  return arr;
+}
+
+uniq(arr);
+
+console.log(arr); // [1,3,4,5]
+```
+:::tip 代码演示
+<http://123.56.124.33:7000/demos/js/array.html>
+:::

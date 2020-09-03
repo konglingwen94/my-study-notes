@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      Vue版本为`2.x`
+
+      <h2>数组乱序,触发Vue视图更新</h2>
+      <div class="shuffleByCopy">
+        <h3>复制新数组的方式随机排序数组元素</h3>
+        <button @click="shuffleByCopy(arr1)">重新乱序</button>
+        {{arr1}}
+      </div>
+      <div class="mutatorShuffle">
+        <h3>更改原数组的方式乱序</h3>
+        <button @click="mutatorShuffle(arr2)">乱序</button>
+        {{arr2}}
+      </div>
+
+      <h2>不会触发Vue组件视图更新的方式（不推荐在应用中使用）</h2>
+      <div class="shuffle">
+        <h3>直接更改原数组索引的方式</h3>
+        <button @click="shuffle(arr3)">乱序</button>
+        {{arr3}}
+      </div>
+      <h1>数组去重</h1>
+      <div class="uniq">
+        <button @click="uniq(uniqArr)">数组去重</button>
+        {{uniqArr}}
+      </div>
+    </div>
+  </body>
+  <script>
+    // Vue.config.devtool = true;
+    function getRandomIndex(min, max) {
+      const random = Math.random();
+
+      return Math.floor((max - min) * random);
+    }
+
+    new Vue({
+      el: "#app",
+      data: {
+        uniqArr: [1, 3, 4, 3, 5, 4, 6, 1],
+        arr1: [1, 2, 3, 4, 5, 6, 7],
+        arr2: [1, 2, 3, 4, 5, 6, 7],
+        arr3: [1, 2, 3, 4, 5, 6, 7],
+      },
+      methods: {
+        mutatorShuffle(array) {
+          for (let i = 0, l = array.length; i < l; i++) {
+            const randomIndex = getRandomIndex(0, l);
+            let temp = array[i];
+            array.splice(i, 1, array[randomIndex]);
+            array.splice(randomIndex, 1, temp);
+          }
+          return array;
+        },
+        shuffle(array) {
+          for (let i = 0, l = array.length; i < l; i++) {
+            const randomIndex = getRandomIndex(0, l);
+            let temp = array[i];
+            array[i] = array[randomIndex];
+            array[randomIndex] = temp;
+          }
+
+          return array;
+        },
+        shuffleByCopy(arr) {
+          const array = arr.slice();
+          for (let i = 0, l = array.length; i < l; i++) {
+            const randomIndex = getRandomIndex(0, l);
+            let temp = array[i];
+            array[i] = array[randomIndex];
+            array[randomIndex] = temp;
+          }
+          this.arr1 = array;
+          return array;
+        },
+        uniq(array) {
+          for (let i = 0, l = array.length; i < l; i++) {
+            for (let j = i + 1; j < l; j++) {
+              if (
+                array[i] === array[j] ||
+                (Number.isNaN(array[j]) && Number.isNaN(array[i]))
+              ) {
+                array.splice(j, 1);
+                l--;
+              }
+            }
+          }
+
+          return array;
+        },
+      },
+    });
+  </script>
+</html>

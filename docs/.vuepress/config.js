@@ -108,31 +108,36 @@ module.exports = {
       "/vue/": [
         {
           title: "工作原理",
-          // path:'/vue/guide',
+          collapsable: false,
           children: [],
         },
         {
           title: "其他",
+          collapsable: false,
+
           children: [""],
         },
         {
           title: "组件库",
+          collapsable: false,
+
           children: ["library"],
         },
       ],
-      "/javascript/": ["", "regexp", "array",'utils'],
+      "/javascript/": ["", "regexp", "array", "utils"],
       "/css/": [""],
       "/express/": [""],
       "/koa/": [""],
       "/node/": [
         {
           title: "node",
+          collapsable: false,
 
           children: [],
         },
         {
           title: "常用node工具",
-
+          collapsable: false,
           children: ["/node/modules/pm2"],
         },
       ],
