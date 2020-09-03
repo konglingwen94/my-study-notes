@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>元素居中布局的各种案例 | 学习笔记</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="Just playing around">
+    <link rel="preload" href="/assets/css/0.styles.ccac5a78.css" as="style"><link rel="preload" href="/assets/js/app.10ed801c.js" as="script"><link rel="preload" href="/assets/js/2.208b9b37.js" as="script"><link rel="preload" href="/assets/js/6.3b53d859.js" as="script"><link rel="prefetch" href="/assets/js/10.7a71efff.js"><link rel="prefetch" href="/assets/js/11.a1c0d182.js"><link rel="prefetch" href="/assets/js/12.bd273d61.js"><link rel="prefetch" href="/assets/js/13.e0b95b81.js"><link rel="prefetch" href="/assets/js/14.23aec017.js"><link rel="prefetch" href="/assets/js/15.17f31300.js"><link rel="prefetch" href="/assets/js/16.bd17b090.js"><link rel="prefetch" href="/assets/js/17.653d783b.js"><link rel="prefetch" href="/assets/js/18.750535a4.js"><link rel="prefetch" href="/assets/js/19.4d7ae511.js"><link rel="prefetch" href="/assets/js/20.584e5d14.js"><link rel="prefetch" href="/assets/js/21.57f7a7f5.js"><link rel="prefetch" href="/assets/js/22.25f623ff.js"><link rel="prefetch" href="/assets/js/23.f7372eec.js"><link rel="prefetch" href="/assets/js/24.d611f508.js"><link rel="prefetch" href="/assets/js/25.d16d725f.js"><link rel="prefetch" href="/assets/js/26.1e4f9e88.js"><link rel="prefetch" href="/assets/js/27.a013f69a.js"><link rel="prefetch" href="/assets/js/28.183a6164.js"><link rel="prefetch" href="/assets/js/29.8012883c.js"><link rel="prefetch" href="/assets/js/3.59217e22.js"><link rel="prefetch" href="/assets/js/4.1cfc2f80.js"><link rel="prefetch" href="/assets/js/5.9c994335.js"><link rel="prefetch" href="/assets/js/7.7be05761.js"><link rel="prefetch" href="/assets/js/8.03c7b3ad.js"><link rel="prefetch" href="/assets/js/9.a66da401.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ccac5a78.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">学习笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/css/" class="nav-link router-link-active">
+  CSS
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/express/" class="nav-link">
+  Express
+</a></li><li class="dropdown-item"><!----> <a href="/koa/" class="nav-link">
+  Koa
+</a></li><li class="dropdown-item"><!----> <a href="/mongodb/" class="nav-link">
+  mongodb
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="命令行工具" class="dropdown-title"><span class="title">命令行工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="命令行工具" class="mobile-dropdown-title"><span class="title">命令行工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/linux.html" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/tools/npm.html" class="nav-link">
+  NPM
+</a></li><li class="dropdown-item"><!----> <a href="/tools/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/devOps.html" class="nav-link">
+  DevOps
+</a></li><li class="dropdown-item"><!----> <a href="/tools/curl.html" class="nav-link">
+  CURL
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软技能" class="dropdown-title"><span class="title">软技能</span> <span class="arrow down"></span></button> <button type="button" aria-label="软技能" class="mobile-dropdown-title"><span class="title">软技能</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/skills/term.html" class="nav-link">
+  词汇总结
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/projects/" class="nav-link">
+  所有项目
+</a></li><li class="dropdown-item"><!----> <a href="/projects/useCases/" class="nav-link">
+  场景用例解析
+</a></li><li class="dropdown-item"><!----> <a href="/projects/article.html" class="nav-link">
+  文章总结
+</a></li><li class="dropdown-item"><!----> <a href="/projects/bugs/" class="nav-link">
+  问题记录
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/konglingwen94/my-study-notes" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/css/" class="nav-link router-link-active">
+  CSS
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/express/" class="nav-link">
+  Express
+</a></li><li class="dropdown-item"><!----> <a href="/koa/" class="nav-link">
+  Koa
+</a></li><li class="dropdown-item"><!----> <a href="/mongodb/" class="nav-link">
+  mongodb
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="命令行工具" class="dropdown-title"><span class="title">命令行工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="命令行工具" class="mobile-dropdown-title"><span class="title">命令行工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/linux.html" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/tools/npm.html" class="nav-link">
+  NPM
+</a></li><li class="dropdown-item"><!----> <a href="/tools/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/devOps.html" class="nav-link">
+  DevOps
+</a></li><li class="dropdown-item"><!----> <a href="/tools/curl.html" class="nav-link">
+  CURL
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软技能" class="dropdown-title"><span class="title">软技能</span> <span class="arrow down"></span></button> <button type="button" aria-label="软技能" class="mobile-dropdown-title"><span class="title">软技能</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/skills/term.html" class="nav-link">
+  词汇总结
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/projects/" class="nav-link">
+  所有项目
+</a></li><li class="dropdown-item"><!----> <a href="/projects/useCases/" class="nav-link">
+  场景用例解析
+</a></li><li class="dropdown-item"><!----> <a href="/projects/article.html" class="nav-link">
+  文章总结
+</a></li><li class="dropdown-item"><!----> <a href="/projects/bugs/" class="nav-link">
+  问题记录
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/konglingwen94/my-study-notes" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/css/" aria-current="page" class="sidebar-link">CSS</a></li><li><a href="/css/layout-center.html" aria-current="page" class="active sidebar-link">元素居中布局的各种案例</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css/layout-center.html#块元素自身相对于父元素水平居中" class="sidebar-link">块元素自身相对于父元素水平居中</a></li><li class="sidebar-sub-header"><a href="/css/layout-center.html#text-align-center-居中布局案列" class="sidebar-link">text-align:center 居中布局案列</a></li><li class="sidebar-sub-header"><a href="/css/layout-center.html#垂直居中布局" class="sidebar-link">垂直居中布局</a></li><li class="sidebar-sub-header"><a href="/css/layout-center.html#水平垂直居中" class="sidebar-link">水平垂直居中</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="元素居中布局的各种案例"><a href="#元素居中布局的各种案例" class="header-anchor">#</a> 元素居中布局的各种案例</h1> <h2 id="块元素自身相对于父元素水平居中"><a href="#块元素自身相对于父元素水平居中" class="header-anchor">#</a> 块元素自身相对于父元素水平居中</h2> <ol><li><p>此条件需要该块元素有固定的宽度，向元素添加样式<code>margin-left:auto</code>和<code>marign-right:auto</code>,在不考虑上下边距的情况下可以缩写为<code>margin:0 auto</code></p></li> <li><p>此条件限制于元素的宽度为父元素的<code>100%</code>,且对元素自身没有固定宽度的要求。给父元素添加<code>padding-left</code>和<code>padding-right</code>相等的值，在不考虑上下间距的情况下可以缩写为<code>padding:0 XXpx</code>。上下居中同理</p></li> <li><p>给相对位置的父元素添加<code>position:relative</code>,给自身元素添加<code>transform:translateX(-50%);left:50%</code>。此方法是通过计算元素自身位置偏移达到水平居中的目的。上下居中同理</p></li> <li><p>通过<code>flex</code>弹性盒子布局。给父元素添加<code>display:flex;</code>,此方法会破坏父元素的盒子模型，对其内的元素容易造成副作用，小心使用。</p> <ul><li>方法一（适合控制多个子元素）： 给父元素添加<code>justify-content:center</code>样式</li></ul> <ul><li>方法二（推荐）： 给元素自身添加<code>margin-left:auto;margin-right:auto</code>样式。</li></ul></li></ol> <h2 id="text-align-center-居中布局案列"><a href="#text-align-center-居中布局案列" class="header-anchor">#</a> text-align:center 居中布局案列</h2> <ol><li>父元素设置此样式，其内部的所有内联和内联块状的子孙元素都会水平居中布局，且会继承此样式。适合用在设置大量的文本，图片水平居中布局。</li></ol> <h2 id="垂直居中布局"><a href="#垂直居中布局" class="header-anchor">#</a> 垂直居中布局</h2> <ol><li><p>给父元素设置<code>display:table-cell;vertical-align:middle</code>。需要给父元素设置一个固定高度。此方法是模拟<code>table</code>表格垂直居中的布局方式</p></li> <li><p>父元素设置<code>display:flex</code>,要求父元素有固定的高度;</p> <ul><li><p>方法一（要求子元素有固定的高度）：子元素设置<code>margin-top:auto;margin-bottom:auto;</code>。</p></li> <li><p>方法二：父元素设置<code>align-self:center;</code></p></li></ul> <ul><li>方法三：（要求子元素有固定的高度）：父元素设置<code>align-items:center</code></li></ul></li></ol> <h2 id="水平垂直居中"><a href="#水平垂直居中" class="header-anchor">#</a> 水平垂直居中</h2> <p>布局元素结构</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>parent<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>child<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>方法一. 通过元素<code>position</code>定位</p> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">.parent</span> <span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.child</span> <span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translate</span><span class="token punctuation">(</span>-50%<span class="token punctuation">,</span> -50%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>方法二. 通过<code>flex</code>布局</p> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">.parent</span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+  <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+  <span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.child</span> <span class="token punctuation">{</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span> // 根据用例场景设置，这里假设为`100px`
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>或</p> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">.parent</span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.child</span> <span class="token punctuation">{</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>方法三 模拟表格（父元素需要宽高值）</p> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">.parent</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span> // 根据实际应用场景设置具体值
+  <span class="token property">display</span><span class="token punctuation">:</span> table-cell<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>方法四 父元素设置<code>padding</code></p> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">.parent</span> <span class="token punctuation">{</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span> // 根据实际应用场景设置具体值
+<span class="token punctuation">}</span>
+<span class="token selector">.child</span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/css/" class="prev router-link-active">
+        CSS
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.10ed801c.js" defer></script><script src="/assets/js/2.208b9b37.js" defer></script><script src="/assets/js/6.3b53d859.js" defer></script>
+  </body>
+</html>
