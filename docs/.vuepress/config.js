@@ -125,7 +125,7 @@ module.exports = {
         },
       ],
       "/javascript/": ["", "regexp", "array", "utils"],
-      "/css/": [""],
+      "/css/": ["","layout-center"],
       "/express/": [""],
       "/koa/": [""],
       "/node/": [
