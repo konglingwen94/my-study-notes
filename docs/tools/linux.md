@@ -100,3 +100,34 @@ scp <bash>
 sh deploy.sh
 
 ```
+
+## Linux服务器上常用命令
+
+1. 查看指定端口号状态
+
+```bash
+
+ netstat -lanp | grep "3000"
+```
+2. 安装`mongodb`
+
+```bash
+wget  https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-4.0.7.tgz 
+```
+
+:::tip 参考
+https://www.cnblogs.com/gaojingya/p/10607419.html
+:::
+
+3. 查看`linux`服务器所有端口号状态
+
+```bash
+netstat -aptn
+```
+
+4. 创建指定服务的软连接到全局变量
+
+```bash
+ln -s <sourcePath> <targetPath>
+
+```
