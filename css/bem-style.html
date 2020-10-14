@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>CSS | 学习笔记</title>
+    <title>BEM 命名规范 | 学习笔记</title>
     <meta name="generator" content="VuePress 1.7.0">
     
     <meta name="description" content="Just playing around">
     
-    <link rel="preload" href="/assets/css/0.styles.e65584f2.css" as="style"><link rel="preload" href="/assets/js/app.6ae276e7.js" as="script"><link rel="preload" href="/assets/js/2.3ce512fe.js" as="script"><link rel="preload" href="/assets/js/10.e1ae3338.js" as="script"><link rel="prefetch" href="/assets/js/11.327f01a5.js"><link rel="prefetch" href="/assets/js/12.791d24b3.js"><link rel="prefetch" href="/assets/js/13.d8dd966c.js"><link rel="prefetch" href="/assets/js/14.b4e5206d.js"><link rel="prefetch" href="/assets/js/15.9e7164a4.js"><link rel="prefetch" href="/assets/js/16.56d9160d.js"><link rel="prefetch" href="/assets/js/17.65bb51d3.js"><link rel="prefetch" href="/assets/js/18.3a8866c6.js"><link rel="prefetch" href="/assets/js/19.88f7ec09.js"><link rel="prefetch" href="/assets/js/20.c73f3e03.js"><link rel="prefetch" href="/assets/js/21.71c13441.js"><link rel="prefetch" href="/assets/js/22.11ea5ca6.js"><link rel="prefetch" href="/assets/js/23.99ae97eb.js"><link rel="prefetch" href="/assets/js/24.08da760a.js"><link rel="prefetch" href="/assets/js/25.b80a946d.js"><link rel="prefetch" href="/assets/js/26.aca68f60.js"><link rel="prefetch" href="/assets/js/27.b93ce4a8.js"><link rel="prefetch" href="/assets/js/28.9d192890.js"><link rel="prefetch" href="/assets/js/29.819eaa2e.js"><link rel="prefetch" href="/assets/js/3.5811eac4.js"><link rel="prefetch" href="/assets/js/30.b164f196.js"><link rel="prefetch" href="/assets/js/31.d29b8ba3.js"><link rel="prefetch" href="/assets/js/32.0a63ed25.js"><link rel="prefetch" href="/assets/js/4.1341021f.js"><link rel="prefetch" href="/assets/js/5.3a959d7e.js"><link rel="prefetch" href="/assets/js/6.e2235a8e.js"><link rel="prefetch" href="/assets/js/7.dfbd6a84.js"><link rel="prefetch" href="/assets/js/8.64974a9f.js"><link rel="prefetch" href="/assets/js/9.47d2d7e5.js">
+    <link rel="preload" href="/assets/css/0.styles.e65584f2.css" as="style"><link rel="preload" href="/assets/js/app.6ae276e7.js" as="script"><link rel="preload" href="/assets/js/2.3ce512fe.js" as="script"><link rel="preload" href="/assets/js/8.64974a9f.js" as="script"><link rel="prefetch" href="/assets/js/10.e1ae3338.js"><link rel="prefetch" href="/assets/js/11.327f01a5.js"><link rel="prefetch" href="/assets/js/12.791d24b3.js"><link rel="prefetch" href="/assets/js/13.d8dd966c.js"><link rel="prefetch" href="/assets/js/14.b4e5206d.js"><link rel="prefetch" href="/assets/js/15.9e7164a4.js"><link rel="prefetch" href="/assets/js/16.56d9160d.js"><link rel="prefetch" href="/assets/js/17.65bb51d3.js"><link rel="prefetch" href="/assets/js/18.3a8866c6.js"><link rel="prefetch" href="/assets/js/19.88f7ec09.js"><link rel="prefetch" href="/assets/js/20.c73f3e03.js"><link rel="prefetch" href="/assets/js/21.71c13441.js"><link rel="prefetch" href="/assets/js/22.11ea5ca6.js"><link rel="prefetch" href="/assets/js/23.99ae97eb.js"><link rel="prefetch" href="/assets/js/24.08da760a.js"><link rel="prefetch" href="/assets/js/25.b80a946d.js"><link rel="prefetch" href="/assets/js/26.aca68f60.js"><link rel="prefetch" href="/assets/js/27.b93ce4a8.js"><link rel="prefetch" href="/assets/js/28.9d192890.js"><link rel="prefetch" href="/assets/js/29.819eaa2e.js"><link rel="prefetch" href="/assets/js/3.5811eac4.js"><link rel="prefetch" href="/assets/js/30.b164f196.js"><link rel="prefetch" href="/assets/js/31.d29b8ba3.js"><link rel="prefetch" href="/assets/js/32.0a63ed25.js"><link rel="prefetch" href="/assets/js/4.1341021f.js"><link rel="prefetch" href="/assets/js/5.3a959d7e.js"><link rel="prefetch" href="/assets/js/6.e2235a8e.js"><link rel="prefetch" href="/assets/js/7.dfbd6a84.js"><link rel="prefetch" href="/assets/js/9.47d2d7e5.js">
     <link rel="stylesheet" href="/assets/css/0.styles.e65584f2.css">
   </head>
   <body>
@@ -16,7 +16,7 @@
   Vue
 </a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
   Javascript
-</a></li><li class="dropdown-item"><!----> <a href="/css/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+</a></li><li class="dropdown-item"><!----> <a href="/css/" class="nav-link router-link-active">
   CSS
 </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/" class="nav-link">
   Node
@@ -52,7 +52,7 @@
   Vue
 </a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
   Javascript
-</a></li><li class="dropdown-item"><!----> <a href="/css/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+</a></li><li class="dropdown-item"><!----> <a href="/css/" class="nav-link router-link-active">
   CSS
 </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/" class="nav-link">
   Node
@@ -84,11 +84,7 @@
   问题记录
 </a></li></ul></div></div><div class="nav-item"><a href="https://github.com/konglingwen94/my-study-notes" target="_blank" rel="noopener noreferrer" class="nav-link external">
   Github
-  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/css/" aria-current="page" class="active sidebar-link">CSS</a></li><li><a href="/css/layout-center.html" class="sidebar-link">元素居中布局的各种案例</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="css"><a href="#css" class="header-anchor">#</a> CSS</h1></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/css/layout-center.html">
-        元素居中布局的各种案例
-      </a>
-      →
-    </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.6ae276e7.js" defer></script><script src="/assets/js/2.3ce512fe.js" defer></script><script src="/assets/js/10.e1ae3338.js" defer></script>
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/css/" aria-current="page" class="sidebar-link">CSS</a></li><li><a href="/css/layout-center.html" class="sidebar-link">元素居中布局的各种案例</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="bem-命名规范"><a href="#bem-命名规范" class="header-anchor">#</a> BEM 命名规范</h1> <div class="custom-block tip"><p class="custom-block-title">参考</p> <p><a href="https://www.jb51.net/css/627916.html" target="_blank" rel="noopener noreferrer">https://www.jb51.net/css/627916.html<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.6ae276e7.js" defer></script><script src="/assets/js/2.3ce512fe.js" defer></script><script src="/assets/js/8.64974a9f.js" defer></script>
   </body>
 </html>
