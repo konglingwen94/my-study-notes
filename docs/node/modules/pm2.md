@@ -2,6 +2,10 @@
 
 ## 常用命令
 
+:::tip
+
+详情文档：<https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/>
+:::
 ```bash
 1. pm2 start <file.js> 启动进程
 
