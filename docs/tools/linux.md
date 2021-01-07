@@ -29,6 +29,8 @@ rm -rf <dir> 递归删除目录
 
 mkdir <dir> 新建目录
 
+mkdir -p <dir> 递归新建目录
+
 mv <oldDirPath> <newDirPath> 重命名/移动 目录
 
 # rename <oldDir> <newDir> 重命名目录
